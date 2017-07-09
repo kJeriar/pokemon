@@ -22,21 +22,11 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<header id="header">
-  <div class="mui-appbar mui--appbar-line-height">
-    <div class="mui-container-fluid">
-           
-      </a>
-      <span class="mui--text-title mui--visible-xs-inline-block title">Pokedex.org</span>
-    </div>
-  </div>
-</header>
-
-<!--costado -->
-
-  </div>
-  <div class="mui-divider"></div>
-  <ul>
+<!-- BARRA DE NAVEGACION -->
+    <nav class="navbar">
+      <div class="container-fluid">         
+          <a class="navbar-brand" href="#">Pokedex.org</a>
+          <ul>
     <li>
       <a href="https://www.pokedex.org/" id="pokemon-link">
         <strong>Pokemon</strong>
@@ -48,29 +38,32 @@
       </a>
     </li>
   </ul>
-</div>
-
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+  <!-- FIN BARRA DE NAVEGACION -->
 
 <body>
 
- <h1 id="main-title">Pokedex.org</h1>
+ <h3 id="main-title">Pokemon</h3>
 
 
 <!-- buscador -->
 <section class="buscador">
-<div class="flexsearch">
-        <div class="flexsearch--wrapper">
-            <form class="flexsearch--form" action="#" method="post">
-                <div class="flexsearch--input-wrapper">
-                    <input class="flexsearch--input" type="search" placeholder="busca tu pokemon">
-                </div>
-                <input class="flexsearch--submit" type="submit" value="&#000000;"/>
-            </form>
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-offset-1 col-lg-6">
+                <input type="text" class="form-control" id="gif-text">
+            </div>
+     
+                <button type="button" id="buscar-gif" class="btn btn-default">Buscar</button>
+            </div>
         </div>
-</div>
+        <div class="row">
+            <div class="col-lg-offset-3 col-lg-6" id="elementos"></div>
+        </div>
+    </div>
  </section>
-
-
 
 <!-- pokemones -->
     <section class="pokemons">
@@ -92,26 +85,18 @@
   </div>
 </footer>
 
-
-
-
-
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
     <script type="com.squareup.retrofit2:retrofit:2.1.0"></script>
-  <script type="com.squareup.converter-gson:2.1.0"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="com.squareup.converter-gson:2.1.0"></script>
 
 
     <!-- JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
-
-
-
-
-
-
 
 </html>
